@@ -1,0 +1,305 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sekhar Green Wall | Gardening & Landscaping</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #203126;
+  line-height: 1.6;
+}
+
+header, footer {
+  background: #123b25;
+  color: white;
+  padding: 22px 6%;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+nav a {
+  color: white;
+  margin: 0 8px;
+  text-decoration: underline;
+}
+
+.hero {
+  background: linear-gradient(120deg, #123b25, #3c8b4d);
+  color: white;
+  padding: 65px 7%;
+}
+
+.hero h1 {
+  font-size: 42px;
+  line-height: 1.2;
+  max-width: 700px;
+}
+
+.hero p {
+  font-size: 20px;
+}
+
+.button {
+  display: inline-block;
+  background: #e8c85a;
+  color: #183c24;
+  padding: 14px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 8px 5px 0 0;
+}
+
+section {
+  padding: 40px 6%;
+}
+
+h2 {
+  color: #236b3b;
+  font-size: 32px;
+}
+
+.services, .catalog, .contacts {
+  display: grid;
+  grid-template-columns:
+    repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #eef7ed;
+  padding: 20px;
+  border-radius: 14px;
+  overflow-wrap: anywhere;
+}
+
+.card h3 {
+  font-size: 22px;
+}
+
+#catalog {
+  background: #f5f8f3;
+}
+
+.catalog img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.catalog a {
+  color: #236b3b;
+  text-decoration: none;
+}
+
+#contact {
+  background: #eef7ed;
+}
+
+.contacts a {
+  color: #1457a6;
+  overflow-wrap: anywhere;
+}
+
+footer {
+  padding: 25px 6%;
+  font-size: 17px;
+}
+
+@media (max-width: 500px) {
+  header {
+    display: block;
+  }
+
+  nav {
+    margin-top: 12px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px 5px 0;
+  }
+
+  .hero {
+    padding: 45px 7%;
+  }
+
+  .hero h1 {
+    font-size: 34px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">🌿 SEKHAR GREEN WALL</div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#catalog">Plants</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="hero">
+  <p>GREENER SPACES, BETTER LIVING</p>
+
+  <h1>Bring Your Spaces to Life with Greenery</h1>
+
+  <p>
+    Gardening, landscaping, green walls and
+    irrigation solutions for beautiful spaces.
+  </p>
+
+  <a class="button" href="#catalog">
+    View Plant Catalogue
+  </a>
+
+  <a class="button" href="#contact">
+    Contact Us
+  </a>
+</section>
+
+<section id="services">
+  <h2>Our Gardening Services</h2>
+
+  <div class="services">
+    <div class="card">
+      <h3>🌱 Nursery & Plants</h3>
+      <p>Discover plants for indoor and outdoor spaces.</p>
+    </div>
+
+    <div class="card">
+      <h3>🌳 Landscape Architecture</h3>
+      <p>Softscape and hardscape garden design solutions.</p>
+    </div>
+
+    <div class="card">
+      <h3>🪴 Green Walls</h3>
+      <p>Green walls and micro-irrigation solutions.</p>
+    </div>
+  </div>
+</section>
+
+<section id="catalog">
+  <h2>Plant Catalogue</h2>
+  <p>Explore our indoor and outdoor plant collections.</p>
+
+  <div class="catalog">
+
+    <div class="card">
+      <a href="images/garden-catalog-1.jpg" target="_blank">
+        <img src="images/garden-catalog-1.jpg"
+             alt="Indoor plants catalogue page 1">
+      </a>
+      <p>Indoor Plants — Page 1</p>
+    </div>
+
+    <div class="card">
+      <a href="images/garden-catalog-2.jpg" target="_blank">
+        <img src="images/garden-catalog-2.jpg"
+             alt="Indoor plants catalogue page 2">
+      </a>
+      <p>Indoor Plants — Page 2</p>
+    </div>
+
+    <div class="card">
+      <a href="images/garden-catalog-3.jpg" target="_blank">
+        <img src="images/garden-catalog-3.jpg"
+             alt="Outdoor plants catalogue page 1">
+      </a>
+      <p>Outdoor Plants — Page 1</p>
+    </div>
+
+    <div class="card">
+      <a href="images/garden-catalog-4.jpg" target="_blank">
+        <img src="images/garden-catalog-4.jpg"
+             alt="Outdoor plants catalogue page 2">
+      </a>
+      <p>Outdoor Plants — Page 2</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact Sekhar Green Wall</h2>
+
+  <div class="contacts">
+
+    <div class="card">
+      <h3>📞 Phone 1</h3>
+      <a href="tel:+919701550322">9701550322</a>
+    </div>
+
+    <div class="card">
+      <h3>📞 Phone 2</h3>
+      <a href="tel:+917013571002">7013571002</a>
+    </div>
+
+    <div class="card">
+      <h3>📍 Address</h3>
+      <p>
+        1-123, HI-TECH CITY, MADHAPUR,
+        HYDERABAD - 500081
+      </p>
+      <a href="https://www.google.com/maps/search/?api=1&query=1-123+HI-TECH+CITY+Madhapur+Hyderabad+500081"
+         target="_blank">
+        View on Google Maps
+      </a>
+    </div>
+
+    <div class="card">
+      <h3>💬 WhatsApp</h3>
+      <a href="https://wa.me/919701550322"
+         target="_blank">
+        Message us on WhatsApp
+      </a>
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <p>© 2026 Sekhar Green Wall</p>
+  <p>Greener Spaces, Better Living 🌿</p>
+</footer>
+
+</body>
+  </html>
+  
