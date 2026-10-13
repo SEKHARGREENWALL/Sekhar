@@ -1,305 +1,75 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sekhar Green Wall | Gardening & Landscaping</title>
-
+<meta name="theme-color" content="#236b3b">
+<title>Sekhar Green Wall | Nursery, Landscaping & Green Walls</title>
 <style>
-* {
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  color: #203126;
-  line-height: 1.6;
-}
-
-header, footer {
-  background: #123b25;
-  color: white;
-  padding: 22px 6%;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 15px;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-nav a {
-  color: white;
-  margin: 0 8px;
-  text-decoration: underline;
-}
-
-.hero {
-  background: linear-gradient(120deg, #123b25, #3c8b4d);
-  color: white;
-  padding: 65px 7%;
-}
-
-.hero h1 {
-  font-size: 42px;
-  line-height: 1.2;
-  max-width: 700px;
-}
-
-.hero p {
-  font-size: 20px;
-}
-
-.button {
-  display: inline-block;
-  background: #e8c85a;
-  color: #183c24;
-  padding: 14px 20px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: bold;
-  margin: 8px 5px 0 0;
-}
-
-section {
-  padding: 40px 6%;
-}
-
-h2 {
-  color: #236b3b;
-  font-size: 32px;
-}
-
-.services, .catalog, .contacts {
-  display: grid;
-  grid-template-columns:
-    repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-}
-
-.card {
-  background: #eef7ed;
-  padding: 20px;
-  border-radius: 14px;
-  overflow-wrap: anywhere;
-}
-
-.card h3 {
-  font-size: 22px;
-}
-
-#catalog {
-  background: #f5f8f3;
-}
-
-.catalog img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.catalog a {
-  color: #236b3b;
-  text-decoration: none;
-}
-
-#contact {
-  background: #eef7ed;
-}
-
-.contacts a {
-  color: #1457a6;
-  overflow-wrap: anywhere;
-}
-
-footer {
-  padding: 25px 6%;
-  font-size: 17px;
-}
-
-@media (max-width: 500px) {
-  header {
-    display: block;
-  }
-
-  nav {
-    margin-top: 12px;
-  }
-
-  nav a {
-    display: inline-block;
-    margin: 5px 8px 5px 0;
-  }
-
-  .hero {
-    padding: 45px 7%;
-  }
-
-  .hero h1 {
-    font-size: 34px;
-  }
-
-  h2 {
-    font-size: 28px;
-  }
-}
+:root{--green:#236b3b;--deep:#123b25;--light:#eef7ed;--gold:#e8c85a;--ink:#203126;--muted:#5c6d61}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+header{background:var(--deep);color:white;padding:16px 5%;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}
+.brand{font-weight:800;font-size:1.45rem;letter-spacing:.4px}.brand small{display:block;font-weight:400;font-size:.72rem;letter-spacing:1px;color:#d7e9d7}
+nav{display:flex;gap:18px;flex-wrap:wrap}nav a{color:#fff;text-decoration:none;font-weight:600;font-size:.93rem}
+.hero{padding:76px 6%;background:linear-gradient(110deg,rgba(18,59,37,.96),rgba(35,107,59,.78)),url('images/garden-catalog-4.jpg') center 35%/cover;color:white}
+.hero-inner{max-width:850px}.eyebrow{text-transform:uppercase;letter-spacing:2px;color:#e8c85a;font-size:.8rem;font-weight:bold}
+h1{font-size:clamp(2.3rem,7vw,4.5rem);line-height:1.08;margin:12px 0}h2{font-size:clamp(1.7rem,4vw,2.5rem);color:var(--green);margin:0 0 10px}h3{margin:0 0 7px;color:var(--green)}
+.hero p{max-width:680px;font-size:1.1rem;color:#f0f7f0}.btn{display:inline-block;padding:12px 18px;border-radius:8px;background:#e8c85a;color:#183c24;text-decoration:none;font-weight:bold;margin:10px 8px 0 0}.btn.outline{background:transparent;border:1px solid white;color:white}
+section{padding:58px 6%}.intro{text-align:center;max-width:850px;margin:auto}.intro p,.muted{color:var(--muted)}
+.services{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;max-width:1100px;margin:28px auto 0}.service{padding:23px;background:var(--light);border-radius:14px;border-bottom:4px solid #7eae67}.service .emoji{font-size:2rem}
+.catalog{background:#f5f8f3}.catalog-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;max-width:1050px;margin:28px auto 0}.catalog-card{background:white;padding:10px;border-radius:13px;box-shadow:0 4px 18px #153c2512}.catalog-card img{width:100%;height:auto;display:block;border-radius:8px}.catalog-card p{margin:10px 4px 4px;color:var(--muted);font-size:.9rem}
+.contact{background:var(--light)}.contact-box{max-width:900px;margin:25px auto 0;background:#fff;border-radius:16px;padding:25px;box-shadow:0 4px 18px #153c2510}.contact-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.detail{padding:15px;background:#f7faf5;border-radius:10px;overflow-wrap:anywhere}.detail strong{display:block;color:var(--green)}.detail a{color:var(--green)}
+footer{background:var(--deep);color:#e9f3e9;text-align:center;padding:22px 5%;font-size:.9rem}
+@media(max-width:700px){header{align-items:flex-start;flex-direction:column}.services{grid-template-columns:1fr}.catalog-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}.hero{padding:58px 6%}section{padding:43px 5%}}
 </style>
 </head>
-
 <body>
-
 <header>
-  <div class="logo">🌿 SEKHAR GREEN WALL</div>
-  <nav>
-    <a href="#services">Services</a>
-    <a href="#catalog">Plants</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <div class="brand">🌿 SEKHAR GREEN WALL <small>NURSERY GARDEN WORKS</small></div>
+  <nav><a href="#services">Services</a><a href="#catalog">Plant Catalogue</a><a href="#contact">Contact</a></nav>
 </header>
-
 <main>
-
-<section class="hero">
-  <p>GREENER SPACES, BETTER LIVING</p>
-
-  <h1>Bring Your Spaces to Life with Greenery</h1>
-
-  <p>
-    Gardening, landscaping, green walls and
-    irrigation solutions for beautiful spaces.
-  </p>
-
-  <a class="button" href="#catalog">
-    View Plant Catalogue
-  </a>
-
-  <a class="button" href="#contact">
-    Contact Us
-  </a>
-</section>
-
-<section id="services">
-  <h2>Our Gardening Services</h2>
-
-  <div class="services">
-    <div class="card">
-      <h3>🌱 Nursery & Plants</h3>
-      <p>Discover plants for indoor and outdoor spaces.</p>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Greener Spaces, Better Living</div>
+      <h1>Bring Your Spaces to Life with Greenery</h1>
+      <p>Sekhar Green Wall offers gardening and landscape solutions, including softscape, hardscape, green walls and micro irrigation.</p>
+      <a class="btn" href="#catalog">View Plant Catalogue</a>
+      <a class="btn outline" href="#contact">Contact Sekhar Green Wall</a>
     </div>
-
-    <div class="card">
-      <h3>🌳 Landscape Architecture</h3>
-      <p>Softscape and hardscape garden design solutions.</p>
+  </section>
+  <section id="services">
+    <div class="intro"><h2>Our Gardening Services</h2><p>Make your home, office or outdoor area greener and more beautiful.</p></div>
+    <div class="services">
+      <article class="service"><div class="emoji">🌱</div><h3>Nursery & Plants</h3><p class="muted">Explore indoor and outdoor plant varieties from the shared catalogue.</p></article>
+      <article class="service"><div class="emoji">🌳</div><h3>Landscape Architecture</h3><p class="muted">Softscape and hardscape ideas to shape attractive garden spaces.</p></article>
+      <article class="service"><div class="emoji">🪴</div><h3>Green Walls & Irrigation</h3><p class="muted">Green wall and micro-irrigation solutions for suitable spaces.</p></article>
     </div>
-
-    <div class="card">
-      <h3>🪴 Green Walls</h3>
-      <p>Green walls and micro-irrigation solutions.</p>
+  </section>
+  <section id="catalog" class="catalog">
+    <div class="intro"><h2>Plant Catalogue</h2><p>These catalogue images were supplied for this website. Tap an image to view it larger.</p></div>
+    <div class="catalog-grid">
+      <a class="catalog-card" href="images/garden-catalog-1.jpg" target="_blank"><img src="images/garden-catalog-1.jpg" alt="Sekhar Green Wall plant catalogue page one"><p>Plant catalogue — page 1</p></a>
+      <a class="catalog-card" href="images/garden-catalog-2.jpg" target="_blank"><img src="images/garden-catalog-2.jpg" alt="Sekhar Green Wall plant catalogue page two"><p>Plant catalogue — page 2</p></a>
+      <a class="catalog-card" href="images/garden-catalog-3.jpg" target="_blank"><img src="images/garden-catalog-3.jpg" alt="Sekhar Green Wall plant catalogue page three"><p>Plant catalogue — page 3</p></a>
+      <a class="catalog-card" href="images/garden-catalog-4.jpg" target="_blank"><img src="images/garden-catalog-4.jpg" alt="Sekhar Green Wall plant catalogue page four"><p>Plant catalogue — page 4</p></a>
     </div>
-  </div>
-</section>
-
-<section id="catalog">
-  <h2>Plant Catalogue</h2>
-  <p>Explore our indoor and outdoor plant collections.</p>
-
-  <div class="catalog">
-
-    <div class="card">
-      <a href="images/garden-catalog-1.jpg" target="_blank">
-        <img src="images/garden-catalog-1.jpg"
-             alt="Indoor plants catalogue page 1">
-      </a>
-      <p>Indoor Plants — Page 1</p>
+  </section>
+  <section id="contact" class="contact">
+    <div class="intro"><h2>Contact Sekhar Green Wall</h2><p>Call for enquiries about plants, landscaping, green walls and irrigation.</p></div>
+    <div class="contact-box">
+      <div class="contact-grid">
+        <div class="detail"><strong>📞 Phone 1</strong><a href="tel:+919701550322">9701550322</a></div>
+        <div class="detail"><strong>📞 Phone 2</strong><a href="tel:+917013571002">7013571002</a></div>
+        <div class="detail"><strong>📍 Address</strong>Chinthopula village, T. P. Gudur (M), SPSR Nellore District</div>
+        <div class="detail"><strong>🌐 Website</strong><a href="https://www.sasigardeningworks.com" target="_blank" rel="noopener">www.sasigardeningworks.com</a></div>
+        <div class="detail"><strong>✉️ Email</strong><a href="mailto:painamrao@sasigardeningworks.com">painamrao@sasigardeningworks.com</a></div>
+        <div class="detail"><strong>💬 WhatsApp</strong><a href="https://wa.me/919701550322" target="_blank" rel="noopener">Message on WhatsApp</a><small class="muted">Uses the first phone number; confirm it is WhatsApp-enabled.</small></div>
+      </div>
     </div>
-
-    <div class="card">
-      <a href="images/garden-catalog-2.jpg" target="_blank">
-        <img src="images/garden-catalog-2.jpg"
-             alt="Indoor plants catalogue page 2">
-      </a>
-      <p>Indoor Plants — Page 2</p>
-    </div>
-
-    <div class="card">
-      <a href="images/garden-catalog-3.jpg" target="_blank">
-        <img src="images/garden-catalog-3.jpg"
-             alt="Outdoor plants catalogue page 1">
-      </a>
-      <p>Outdoor Plants — Page 1</p>
-    </div>
-
-    <div class="card">
-      <a href="images/garden-catalog-4.jpg" target="_blank">
-        <img src="images/garden-catalog-4.jpg"
-             alt="Outdoor plants catalogue page 2">
-      </a>
-      <p>Outdoor Plants — Page 2</p>
-    </div>
-
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Contact Sekhar Green Wall</h2>
-
-  <div class="contacts">
-
-    <div class="card">
-      <h3>📞 Phone 1</h3>
-      <a href="tel:+919701550322">9701550322</a>
-    </div>
-
-    <div class="card">
-      <h3>📞 Phone 2</h3>
-      <a href="tel:+917013571002">7013571002</a>
-    </div>
-
-    <div class="card">
-      <h3>📍 Address</h3>
-      <p>
-        1-123, HI-TECH CITY, MADHAPUR,
-        HYDERABAD - 500081
-      </p>
-      <a href="https://www.google.com/maps/search/?api=1&query=1-123+HI-TECH+CITY+Madhapur+Hyderabad+500081"
-         target="_blank">
-        View on Google Maps
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>💬 WhatsApp</h3>
-      <a href="https://wa.me/919701550322"
-         target="_blank">
-        Message us on WhatsApp
-      </a>
-    </div>
-
-  </div>
-</section>
-
+  </section>
 </main>
-
-<footer>
-  <p>© 2026 Sekhar Green Wall</p>
-  <p>Greener Spaces, Better Living 🌿</p>
-</footer>
-
+<footer>© <span id="year"></span> Sekhar Green Wall · Greener Spaces, Better Living</footer>
+<script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
-  </html>
-  
+</html>
